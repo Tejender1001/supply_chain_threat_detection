@@ -1,0 +1,7 @@
+pandas==2.1
+django==2.1
+flask==1.0
+Requests==2.19.0
+urllib3==1.23
+pillow==6.0.0
+paramiko==2.4.0
