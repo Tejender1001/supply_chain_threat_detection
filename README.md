@@ -1,9 +1,6 @@
-# supply_chain_threat_detection
-SOC based supply chain threat detection using SBOM analysis, Trivy, Wazuh SIEM, FIM and automated CI/CD security gate
-# Supply Chain Threat Detection Lab
-
+## supply_chain_threat_detection
 ## Overview
-This project is a DevSecOps-based Supply Chain Threat Detection Lab designed to identify vulnerable dependencies, classify CVEs by severity, and automatically block code pushes when critical vulnerabilities are detected.
+SOC based supply chain threat detection using SBOM analysis, Trivy, Wazuh SIEM, FIM and automated CI/CD security gate. This project is a DevSecOps-based Supply Chain Threat Detection Lab designed to identify vulnerable dependencies, classify CVEs by severity, and automatically block code pushes when critical vulnerabilities are detected.
 
 The system integrates vulnerability scanning, monitoring, and automated policy enforcement to strengthen software supply chain security during development and deployment.
 
