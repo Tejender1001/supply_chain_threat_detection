@@ -1,0 +1,9 @@
+<decoder name="trivy-vuln">
+  <prematch>{"VulnerabilityID":</prematch>
+</decoder>
+
+<decoder name="trivy-vuln-fields">
+  <parent>trivy-vuln</parent>
+  <use_own_name>true</use_own_name>
+  <plugin_decoder>JSON_Decoder</plugin_decoder>
+</decoder>

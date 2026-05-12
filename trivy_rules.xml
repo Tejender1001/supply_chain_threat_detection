@@ -1,0 +1,38 @@
+<group name="trivy,vulnerability,sbom,soc">
+
+  <rule id="100200" level="3">
+    <decoded_as>json</decoded_as>
+    <field name="VulnerabilityID">\.+</field>
+    <description>Trivy: Vulnerability detected</description>
+    <group>trivy_scan</group>
+  </rule>
+
+  <rule id="100201" level="5">
+    <if_sid>100200</if_sid>
+    <field name="Severity">^LOW$</field>
+    <description>Trivy LOW severity vulnerability detected</description>
+    <group>trivy_low</group>
+  </rule>
+
+  <rule id="100202" level="9">
+    <if_sid>100200</if_sid>
+    <field name="Severity">^MEDIUM$</field>
+    <description>Trivy MEDIUM severity vulnerability detected</description>
+    <group>trivy_medium</group>
+  </rule>
+
+  <rule id="100203" level="12">
+    <if_sid>100200</if_sid>
+    <field name="Severity">^HIGH$</field>
+    <description>Trivy HIGH severity vulnerability detected</description>
+    <group>trivy_high</group>
+  </rule>
+
+  <rule id="100204" level="15">
+    <if_sid>100200</if_sid>
+    <field name="Severity">^CRITICAL$</field>
+    <description>Trivy CRITICAL severity vulnerability detected</description>
+    <group>trivy_critical</group>
+  </rule>
+
+</group>
